@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dian's Portfolio</title>
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- self -->
+  <link rel="stylesheet" href="./css/styles.css">
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <!-- Navbar ----------------------------------------------------------------------------------------->
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">DiAn</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dian_navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="dian_navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link main-link" href="#section01" title="關於我">關於我</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-link" href="#section02" title="網頁設計">網頁設計</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-link" href="#section03" title="UI/UX">UI/UX</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-link" href="#section04" title="平面設計">平面設計</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-link" href="#section05" title="插圖">插圖</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home ----------------------------------------------------------------------------------------->
+    <section id="home">
+      <div class="info">
+        <div class="sayHi">Hello,</div>
+        <h1><span>我是</span>王韻槙 <span>Jane</span></h1>
+        <div class="jobTitle">前端網頁開發</div>
+        <div class="quote">"Stay Hungry, Stay Foolish" —Steve Jobs</div>
+      </div>   
+      <div class="imgPlace">
+        <div class="dianImg"></div>
+      </div>   
+      <div class="bgDec">
+        <span class="material-icons">expand_more</span>
+        <div class="block"></div>
+        <div class="jobName">FrontEnd</div>
+      </div>
+    </section>
+
+    <!-- section01 About Me ----------------------------------------------------------------------------------------->
+    <section id="section01">
+      <div class="aboutMeImg"></div>
+      <div class="aboutMe">
+        <div class="aboutQuote">
+          <i class="fa fa-quote-left" aria-hidden="true"></i>
+          我、設計與程式蹦出的火花
+          <i class="fa fa-quote-right" aria-hidden="true"></i>
+        </div>
+        <div class="aboutInfo" v-for="aboutInfo in aboutInfos">
+          {{ aboutInfo.parta }}
+          {{ aboutInfo.partb }}
+        </div>
+        <div class="aboutJob">
+          <div class="jobBox" v-for="jobBox in jobBoxs">
+            <div class="year">
+              <h5>{{ jobBox.year }}</h5>
+              <h5>{{ jobBox.company }}</h5>
+            </div>
+            <div class="text">
+              <h4>{{ jobBox.name }}</h4>
+              <p>{{ jobBox.task }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section02 website ----------------------------------------------------------------------------------------->
+    <section id="section02">
+      <h2>Website Design</h2>
+      <div class="container">
+        <div class="webGroupAll row">
+          <div class="col-4 mb-3" v-for="website in websites">
+            <a :href="website.link" target="_blank">
+              <img :src="website.imgUrl" :alt="website.info">
+            </a>
+          </div>
+          <!-- <div class="webGroup col-12 col-lg-8">
+            <a href="https://yunndian27.github.io/backpacking-front/" target="_blank">
+              <div class="webBox">
+                <div class="webInfo">
+                  <h3>背包客棧自助旅行論壇優化</h3>
+                  <p>因為習慣旅遊前做好功課，背包客棧一直是我的寶典，使用時發現少了一些圖來說故事，職訓結業前剛好有機會可執行，並使用所學的新專業來做全面規劃。</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+            <div class="webGroup col-12 col-lg-4">
+              <div class="webBox"></div>
+
+              <div class="webBox"></div>
+
+              <button class="webBtn">
+                See More <i class="material-icons">east</i>
+              </button>
+              
+
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- section03 UI/UX ----------------------------------------------------------------------------------------->
+    <section id="section03">
+      <h2>UI/UX</h2>
+      <div class="visualGroup row">
+        <div class="col-3 pb-4" v-for="dailyUi in dailyUis">
+          <div class="card">
+            <img :src="dailyUi.imgUrl" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ dailyUi.title }}</h5>
+              <p class="card-text">{{ dailyUi.text }}</p>
+              <!-- <a href="#" class="btn btn-secondary">放大看</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section04 平面設計----------------------------------------------------------------------------------------->
+    <section id="section04">
+      <h2>平面設計</h2>
+      <div class="graphicGroup row">
+        <div class="graphic col-6">
+          <div class="graBox col-6 col-lg-4 rounded" v-for="graphic in graphics">
+            <img :src="graphic.imgUrl" class="mx-auto">
+          </div>
+        </div>
+        <div class="graphic col-6" >
+          <div class="showBoxInfo">
+            <div class="graBoxBig rounded">
+              <img src="./images/graphic001.jpg" class="mx-auto">
+            </div>
+            <div class="title">年曆設計</div>
+            <div class="subtitle">Photoshop</div>
+            <div class="description">以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。</div>
+            <!-- <div class="title">{{ graphic.title }}</div>
+            <div class="subtitle">{{ graphic.tool }}</div>
+            <div class="description">{{ graphic.text }}</div> -->
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <!-- section05 插圖----------------------------------------------------------------------------------------->
+    <section id="section05">
+      <h2>插圖</h2>
+      <div class="container">
+        <div class="illustraGroup col-2" v-for="illustra in illustras">
+          <div class="card" >
+            <img :src="illustra.imgUrl" class="card-img-top">
+            <div class="card-body">
+              <p class="card-text">{{ illustra.tool }}</p>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- <div class="owl-carousel owl-theme">
+          <div class="card">
+            <a class="image-popup-no-margins" href="./images/illustration001.jpg">
+              <img src="./images/illustration001.jpg" classs="card-img-top">
+            </a>         
+            <div class="card-body">
+              <div class="card-title">魔戒</div>
+            </div>
+          </div>
+        </div> -->
+
+
+      </div>
+      
+    </section>
+
+    <!-- footer ----------------------------------------------------------------------------------------->
+    <footer id="footer">
+      <div class="container">
+
+      </div>
+    </footer>
+
+
+  </div>
+
+
+
+  <!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- <script src="https://unpkg.com/vue@next"></script> -->
+  <!-- jquery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js'></script>
+  <!-- bootstrap -->
+  <script src='./js/bootstrap.bundle.min.js'></script>
+  <!-- owl carsouel -->
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/owl_self.js"></script>
+  <!-- magnific-popup -->
+  <script src="./js/jquery.magnific-popup.min.js"></script>
+  <!-- magnific-popup view source 各別設定 js -->
+  <script src="./js/magnific-popup-self.js"></script>
+  <!-- self -->
+  <script src="./js/all.js"></script>
+
+</body>
+
+</html>

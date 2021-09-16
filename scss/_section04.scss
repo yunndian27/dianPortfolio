@@ -1,0 +1,71 @@
+/* section04 graphic Design--------------------------------------------------------------------------------------- */ 
+#section04 {
+  padding: 0 1.8rem;
+  padding-top: 80px;
+  background: rgba($color: $color_primary, $alpha: 0.5);
+
+  h2 {
+    text-align: center;
+    margin-bottom: 1.8rem;
+  }
+
+  .graphicGroup {
+    width: 80%;
+    margin: auto;
+    
+    .graphic:nth-child(1) {
+
+      .graBox {
+        width: 220px;
+        height: 220px;
+        background: rgba($color: $color_func, $alpha: 0.1);
+        margin: 0.5rem;
+        box-sizing: border-box;
+        float: left;
+        overflow: hidden;
+        
+
+        img {
+          width: 220px;
+          height: 220px;
+          object-fit: scale-down;
+        }
+      }
+    }
+
+    .graphic:nth-child(2) {
+
+      .showBoxInfo {
+        width: 100%;
+        height: 100%;
+        padding-top: 0.5rem;
+
+        .graBoxBig {
+          width: 700px;
+          height: 500px;
+          background: rgba($color: $color_func, $alpha: 0.3);
+          margin-bottom: 1rem;
+          
+
+          img {
+            width: 700px;
+            height: 500px;
+            object-fit: contain;
+          }
+        }
+        .title {
+          font-size: 2rem;
+        }
+        .subtitle {
+          font-size: 1.2rem;
+          font-weight: 300;
+          color: $color_func;
+        }
+        .description {
+          font-size: 1rem;
+          color: $color_grey;
+        }
+      }
+    }
+  }
+}

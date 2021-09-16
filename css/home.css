@@ -1,0 +1,10 @@
+/* home --------------------------------------------------- */
+#home {
+  margin-top: 60px;
+  position: relative;
+}
+
+#home .dianImg {
+  width: 400px;
+  height: 400px;
+}

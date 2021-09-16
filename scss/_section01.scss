@@ -1,0 +1,202 @@
+/* section01 About Me--------------------------------------------------------------------------------------- */ 
+#section01 {
+
+  .aboutMeImg{
+    display: none;
+  }
+  .aboutMe {
+    padding: 1.8rem;
+
+    .aboutQuote {
+      height: 3rem;
+      color: $color_func;
+      font-size: 1.6rem;
+      background: rgba($color: $color_primary, $alpha: 0.5);
+      margin-bottom: 1.8rem;
+      text-align: center;
+      line-height: 3rem;
+      border-radius: 30px;
+
+      .fa-quote-left {
+        font-size: 1.4rem;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+      }
+
+      .fa-quote-right {
+        font-size: 1.4rem;
+        position: absolute;
+        right: 30px;
+        top: 70px;
+      }
+    }
+
+    .aboutInfo {
+      font-size: 1rem;
+      color: $color_grey;
+      margin-bottom: 1rem;
+    }
+
+    .aboutJob {
+      display: flex;
+      flex-direction: column;
+
+      .jobBox {
+        display: flex;
+        flex-direction: column;
+        margin: .6rem 0;
+        border-bottom: 1.7px solid rgba($color: $color_primary, $alpha: 0.8);
+
+        &:nth-child(3) {
+          border-bottom: none;
+        }
+
+        .year { 
+          font-weight: 300;
+          h5 {
+            font-size: 1rem;
+            color: rgba($color: $color_grey, $alpha: 0.5);
+          }
+        }
+
+        .text {
+          h4 {
+            font-size: 1.2rem;
+            color: $color_func;
+          }
+          p {
+            font-size: 1rem;
+            color: rgba($color: $color_grey, $alpha: 0.85);
+          }
+        }
+      }
+    }
+  }
+
+  @include md{
+    display: flex;
+    flex-direction: column;
+
+    .aboutMeImg{
+      display: block;
+      width: 100vw;
+      height: 50vh;
+      background: #333 url("../images/dainphoto.jpg") no-repeat center/100%;
+    }
+
+    .aboutMe {
+      padding: 1.8rem 4.5rem;
+  
+      .aboutQuote {
+        font-size: 1.8rem;
+        font-weight: 500;
+        height: 3.5rem;
+        line-height: 3.5rem;
+  
+        .fa-quote-left {
+          position: absolute;
+          left: 80px;
+          top: 245px;
+        }
+  
+        .fa-quote-right {
+          position: absolute;
+          right: 80px;
+          top: 290px;
+        }
+      }
+
+      .aboutJob {
+        .jobBox {
+          display: flex;
+          flex-direction: row;
+          .year {
+            width: 40vw;
+            padding-right: .8rem;
+            font-size: .9rem;
+          }
+          .text {
+            width: 60vw;
+          }
+        }
+      }
+    }
+  }
+
+  @include lg {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .aboutMeImg {
+      display: block;
+      width: 50vw;
+      height: 100vh;
+      background: #333 url("../images/dainphoto.jpg") no-repeat center/200% 100%;
+    }
+
+    .aboutMe {
+      width: 50vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 120px;
+
+      .aboutQuote {
+        font-size: 1.8rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+        position: relative;
+  
+        .fa-quote-left {
+          font-size: 1.2rem;
+          position: absolute;
+          left: 10px;
+          top: -10px;
+        }
+  
+        .fa-quote-right {
+          font-size: 1.2rem;
+          position: absolute;
+          right: 10px;
+          top: 40px;
+        }
+      }
+      
+
+      .aboutInfo {
+        padding: 1.2rem 0;
+        font-size: 1.2rem;
+        margin-bottom: 0;
+      }
+
+      .aboutJob {
+        padding:  1.2rem 0;
+        .jobBox {
+          border-bottom: none;
+          .year {
+            h5 {
+              font-size: 1rem;
+            }
+          }
+          .text {
+            p {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include xl {
+    .aboutMe {
+      padding: 5rem;
+      padding-top: 150px;
+    }
+  }
+
+}

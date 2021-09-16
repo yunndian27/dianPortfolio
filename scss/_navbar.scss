@@ -1,0 +1,27 @@
+/* navbar導覽列 --------------------------------------------------------------------------------------- */ 
+#navbar {
+  background: #fff;
+  .nav-link {
+    font-size: rfs(1.2rem);
+    text-align: right;
+    color: $color_grey;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: .5s;
+    &:hover {
+      color: #fff;
+      background: $color_func;
+    }
+    &:active{
+      font-weight: bolder;
+      color: #fff;
+      background: $color_func;
+    }
+  }
+  @include lg{
+    #dian_navbar {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
