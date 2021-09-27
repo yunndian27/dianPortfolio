@@ -98,36 +98,17 @@
 
     <!-- section02 website ----------------------------------------------------------------------------------------->
     <section id="section02">
-      <h2>Website Design</h2>
+      <h2 class="mb-5 mb-md-3">Website Design</h2>
       <div class="container">
         <div class="webGroupAll row">
-          <div class="col-4 mb-3" v-for="website in websites">
+          <div class="web col-4 mb-4 mb-md-3" v-for="website in websites">
+            
             <a :href="website.link" target="_blank">
+              <span>{{ website.info }}</span>
+              <span>{{ website.explain }}</span>
               <img :src="website.imgUrl" :alt="website.info">
             </a>
           </div>
-          <!-- <div class="webGroup col-12 col-lg-8">
-            <a href="https://yunndian27.github.io/backpacking-front/" target="_blank">
-              <div class="webBox">
-                <div class="webInfo">
-                  <h3>背包客棧自助旅行論壇優化</h3>
-                  <p>因為習慣旅遊前做好功課，背包客棧一直是我的寶典，使用時發現少了一些圖來說故事，職訓結業前剛好有機會可執行，並使用所學的新專業來做全面規劃。</p>
-                </div>
-              </div>
-            </a>
-          </div>
-
-            <div class="webGroup col-12 col-lg-4">
-              <div class="webBox"></div>
-
-              <div class="webBox"></div>
-
-              <button class="webBtn">
-                See More <i class="material-icons">east</i>
-              </button>
-              
-
-          </div> -->
         </div>
       </div>
     </section>
@@ -136,7 +117,7 @@
     <section id="section03">
       <h2>UI/UX</h2>
       <div class="visualGroup row">
-        <div class="col-3 pb-4" v-for="dailyUi in dailyUis">
+        <div class="col-6 col-md-3 pb-4 pb-md-3" v-for="dailyUi in dailyUis">
           <div class="card">
             <img :src="dailyUi.imgUrl" class="card-img-top" alt="...">
             <div class="card-body">
@@ -154,8 +135,10 @@
       <h2>平面設計</h2>
       <div class="graphicGroup row">
         <div class="graphic col-6">
-          <div class="graBox col-6 col-lg-4 rounded" v-for="graphic in graphics">
-            <img :src="graphic.imgUrl" class="mx-auto">
+          <div class="row">
+            <div class="graBox col-6 col-md-4 rounded" v-for="graphic in graphics">
+              <img :src="graphic.imgUrl" class="mx-auto">
+            </div>
           </div>
         </div>
         <div class="graphic col-6" >

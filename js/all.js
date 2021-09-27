@@ -14,14 +14,14 @@ new Vue({
         { year: '2015.8 - 2016.1', company: '台灣知識庫股份有限公司', name: '多媒體動畫設計師', task: '製作教學動畫短片，把靜態的畫面打造活潑動畫內容。' }
       ],
       websites: [
-        { link: 'https://yunndian27.github.io/backpacking-front/#/', imgUrl: './images/website001.jpg', info: '專題 | 背包客棧旅遊論壇 前台' },
-        { link: 'https://yunndian27.github.io/backpacking-front/#/admin/', imgUrl: './images/website002.jpg', info: '專題 | 背包客棧旅遊論壇 後台' },
-        { link: 'https://yunndian27.github.io/vue_hw-pomodoro/#/', imgUrl: './images/website003.jpg', info: 'Vue 番茄鐘' },
-        { link: 'https://yunndian27.github.io/css_layout_youtube/', imgUrl: './images/website004.jpg', info: 'Youtube 切版' },
-        { link: 'https://yunndian27.github.io/summerKeydown/', imgUrl: './images/website005.jpg', info: '夏日練打蟲子' },
-        { link: 'https://yunndian27.github.io/englishFlipCard/', imgUrl: './images/website006.jpg', info: '英文對對碰' },
-        { link: 'https://yunndian27.github.io/sendHerHome/', imgUrl: './images/website007.jpg', info: '專注力小遊戲 | 送阿布回家' },
-        { link: 'https://github.com/yunndian27/trailfitnesstw0503', imgUrl: './images/website008.jpg', info: 'line機器人 | 健身步道' }
+        { link: 'https://yunndian27.github.io/backpacking-front/#/', imgUrl: './images/website001.jpg', info: '背包客棧旅遊論壇 前台', explain: '使用 Vue 搭配 U I框架 Quasar，並搭配 SASS 編譯撰寫樣式，搭配各種 NPM 套件使用。' },
+        { link: 'https://yunndian27.github.io/backpacking-front/#/admin/', imgUrl: './images/website002.jpg', info: '背包客棧旅遊論壇 後台', explain: '後臺部屬在 Heroku，資料庫則以 mongoDB 搭配撰寫，並使用 Vue 官方推薦的 AJAX 套件 axios 做資料交換。' },
+        { link: 'https://yunndian27.github.io/vue_hw-pomodoro/#/', imgUrl: './images/website003.jpg', info: 'Vue 番茄鐘', explain: '使用 Vue 元件概念搭配 BootstrapVue 切版，並使用 Vue CLI 開發工具，可做時間倒數，新增刪除等功能。' },
+        { link: 'https://yunndian27.github.io/css_layout_youtube/', imgUrl: './images/website004.jpg', info: 'Youtube 切版', explain: '以寬1920的版面作為絕對定位切版練習。' },
+        { link: 'https://yunndian27.github.io/summerKeydown/', imgUrl: './images/website005.jpg', info: '夏日練打蟲子', explain: '用 JavaScript 設計一個練習靜下心打敲鍵盤對應字母的遊戲，並以夏日打蚊蟲作為遊戲發想。' },
+        { link: 'https://yunndian27.github.io/englishFlipCard/', imgUrl: './images/website006.jpg', info: '英文對對碰', explain: '用 jQuery 以及 CSS 3D 製作英文對對碰遊戲，翻左邊動物圖須以右邊英文字相同，每場遊戲都會對亂數出現' },
+        { link: 'https://yunndian27.github.io/sendHerHome/', imgUrl: './images/website007.jpg', info: '專注力遊戲 | 送阿布回家', explain: '延伸《怪獸電力公司》故事劇情送小女孩阿布回家，並以 jQuery 的 DOM 操作和動畫設計的專注力遊戲！' },
+        { link: 'https://github.com/yunndian27/trailfitnesstw0503', imgUrl: './images/website008.jpg', info: 'line機器人 | 健身步道', explain: '串接政府公開資料，使用 Node.js 製作查詢步道資料的 LINE 機器人，並部署到 Heroku。' }
       ],
       dailyUis: [
         { imgUrl: './images/DailyUI_001.jpg', title: '寵物監視 註冊頁', text: '使用寵物監視器前需先註冊。' },

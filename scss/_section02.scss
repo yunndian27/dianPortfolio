@@ -10,88 +10,198 @@
   }
 
   .webGroupAll {
-    a {
-      &::before {
-        content: '';
-        width: 22%;
-        height: 21%;
-        position: absolute;
-        background: $color_func;
-        opacity: 0;
-      }
-      &:hover::before {
-        opacity: .5;
+    .web {
+      height: 220px;
+      position: relative;
+
+      a {
+        position: relative;
+
+        span {
+          color: #fff;
+          text-align: center;
+          opacity: 0;
+          z-index: 1;
+          position: absolute;
+          top: -50px;
+          left: 50%;
+          transform: translateX(-50%);
+          &:nth-child(1) {
+            font-size: 1.2rem;
+          }
+          &:nth-child(2) {
+            color: rgba($color: $color_primary, $alpha: 0.9);
+            font-size: .9rem;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        &::before {
+          content: '';
+          width: 416px;
+          height: 220px;
+          position: absolute;
+          background: $color_func;
+          opacity: 0;
+        }
+        &:hover::before {
+          opacity: .9;
+        }  
+        &:hover {
+          span {
+            opacity: 1;
+          }
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
       }
 
+    }
 
-      img {
-      width: 100%;
-    }
-    }
-    
   }
 
-  // .webGroupAll {
-  //   width: 80vw;
-  //   margin: auto;
-    
-  //   .webGroup:nth-child(1) {
-  //     // width: 100%;
-  //     height: 70vh;
+  @include md {
+    padding: 0 1.8rem;
+    padding-top: 80px;
+    background: rgba($color: $color_grey_light, $alpha: 0.3);
 
-  //     .webBox {
-  //       width: 100%;
-  //       height: 100%;
-  //       background: url("../images/backpacking.jpg") no-repeat center/120%;
-  //       position: relative;
+    h2 {
+      text-align: center;
+      margin-bottom: 0rem;
+    }
 
-  //       .webInfo {
-  //         width: 70%;
-  //         text-align: center;
-  //         color: #fff;
-  //         display: none;
-  //         position: absolute;
-  //         top: 50%;
-  //         left: 50%;
-  //         transform: translate(-50%,-50%);
-  //       }
-  //     }
-  //   }
+    .webGroupAll {
+      .web {
+        height: 160px;
+        position: relative;
 
-  //   .webGroup:nth-child(2) { 
-  //     // width: 100%;
-  //     height: 30vh;
+        a {
+          position: relative;
 
-  //     .webBox {
-  //       width: 100%;
-  //       height: 100%;
-  //       margin-bottom: 1rem;
+          span {
+            color: #fff;
+            text-align: center;
+            opacity: 0;
+            z-index: 1;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            &:nth-child(1) {
+              font-size: 1rem;
+            }
+            &:nth-child(2) {
+              color: rgba($color: $color_primary, $alpha: 0.9);
+              font-size: .8rem;
+              position: absolute;
+              top: -20px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
 
-  //       &:nth-child(1) {
-  //         background: url("../images/pomodoro.jpg") no-repeat center/120%;
+          &::before {
+            content: '';
+            width: 358px;
+            height: 160px;
+            position: absolute;
+            background: $color_func;
+            opacity: 0;
+          }
+          &:hover::before {
+            opacity: .9;
+          }  
+          &:hover {
+            span {
+              opacity: 1;
+            }
+          }
 
-  //       }
-  //       &:nth-child(2) {
-  //         background: url("../images/summerKeydown.png") no-repeat center/120%;
-  //       }
-  //     }
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
 
-  //     .webBtn {
-  //       width: 100%;
-  //       height: 60px;
-  //       font-size: 1.5rem;
-  //       text-align: center;
-  //       line-height: 60px;
-  //       color: $color_func;
-  //       border: 3px solid $color_func;
+      }
 
-  //       &:hover {
-  //         background: $color_func;
-  //         color: #fff;
-  //       }
-  //     }
-  //   }
-  // }
+    }
+  }
+
+  @include xxl {
+    padding: 0 1.8rem;
+    padding-top: 80px;
+    background: rgba($color: $color_grey_light, $alpha: 0.3);
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1.8rem;
+    }
+
+    .webGroupAll {
+      .web {
+        height: 220px;
+        position: relative;
+
+        a {
+          position: relative;
+
+          span {
+            color: #fff;
+            text-align: center;
+            opacity: 0;
+            z-index: 1;
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            &:nth-child(1) {
+              font-size: 1.2rem;
+            }
+            &:nth-child(2) {
+              color: rgba($color: $color_primary, $alpha: 0.9);
+              font-size: .9rem;
+              position: absolute;
+              top: -20px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+
+          &::before {
+            content: '';
+            width: 416px;
+            height: 220px;
+            position: absolute;
+            background: $color_func;
+            opacity: 0;
+          }
+          &:hover::before {
+            opacity: .9;
+          }  
+          &:hover {
+            span {
+              opacity: 1;
+            }
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+      }
+
+    }
+  }
+  
 }
 
 

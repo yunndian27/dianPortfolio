@@ -12,4 +12,13 @@
     width: 80%;
     margin: auto;
   }
+
+  @include md {
+    .card-title {
+      font-size: 1rem;
+    }
+    .card-text {
+      font-size: 0.8rem;
+    }
+  }
 }
