@@ -9,7 +9,8 @@ body {
 #section02,
 #section03,
 #section04,
-#section05 {
+#section05,
+.aboutMeWrap {
   position: relative;
   height: 100vh;
   z-index: 1000;
@@ -404,6 +405,21 @@ body {
   font-size: 1rem;
   color: #575756;
   margin-bottom: 1rem;
+}
+
+#section01 .aboutMe .aboutMeBtn {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+#section01 .aboutMe .aboutMeBtn a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #B07F6B;
+  color: #fff;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
 }
 
 #section01 .aboutMe .aboutJob {
@@ -1005,4 +1021,24 @@ body {
 
 #section05 .illustraGroup img {
   width: 100%;
+}
+
+/* about me ----------------------------- */
+.aboutMeWrap h1 {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.aboutMeWrap .returnBtn {
+  font-size: 1.2rem;
+}
+
+.aboutMeWrap .returnBtn a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #B07F6B;
+  color: #fff;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
 }

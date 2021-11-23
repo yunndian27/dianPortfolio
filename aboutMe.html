@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Dian</title>
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- icon -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <!-- self -->
+  <link rel="stylesheet" href="./css/styles.css">
+  </style>
+</head>
+<body>
+  <div id="app">
+    <div class="aboutMeWrap">
+      <h1>About ME</h1>
+      <div class="returnBtn">
+        <a href="index.html#section01">return</a>
+      </div>
+      <div class="aboutJob">
+          <div class="jobBox" v-for="jobBox in jobBoxs">
+            <div class="year">
+              <h5>{{ jobBox.year }}</h5>
+              <h5>{{ jobBox.company }}</h5>
+            </div>
+            <div class="text">
+              <h4>{{ jobBox.name }}</h4>
+              <p>{{ jobBox.task }}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+
+  <!-- vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- <script src="https://unpkg.com/vue@next"></script> -->
+  <!-- jquery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js'></script>
+  <!-- bootstrap -->
+  <script src='./js/bootstrap.bundle.min.js'></script>
+  <!-- owl carsouel -->
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/owl_self.js"></script>
+  <!-- magnific-popup -->
+  <script src="./js/jquery.magnific-popup.min.js"></script>
+  <!-- magnific-popup view source 各別設定 js -->
+  <script src="./js/magnific-popup-self.js"></script>
+  <!-- self -->
+  <script src="./js/all.js"></script>
+</body>
+</html>

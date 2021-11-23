@@ -38,6 +38,18 @@
       margin-bottom: 1rem;
     }
 
+    .aboutMeBtn {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      a {
+        text-decoration: none;
+        padding: 10px 20px;
+        background: $color_func;
+        color: $color_white;
+        @include border-radius(7px);
+      }
+    }
+
     .aboutJob {
       display: flex;
       flex-direction: column;

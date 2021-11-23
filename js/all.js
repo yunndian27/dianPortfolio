@@ -33,14 +33,14 @@ new Vue({
       ],
       graphics: [
         { imgUrl: './images/graphic001.jpg', title: '年曆設計', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
-        { imgUrl: './images/graphic002.jpg', title: '年曆設計', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
-        { imgUrl: './images/graphic003.jpg', title: '年曆設計', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
-        { imgUrl: './images/graphic004.jpg', title: '年曆設計', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
-        { imgUrl: './images/graphic005.jpg', title: '年曆設計', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
-        { imgUrl: './images/graphic006.jpg', title: '年曆設計', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
-        { imgUrl: './images/graphic007.jpg', title: '年曆設計', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
-        { imgUrl: './images/graphic008.jpg', title: '年曆設計', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
-        { imgUrl: './images/graphic009.jpg', title: '年曆設計', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' }
+        { imgUrl: './images/graphic002.jpg', title: '海報設計', tool: 'Illustrator', text: '設計以大數字提醒90後，應積極找尋人生藍圖。' },
+        { imgUrl: './images/graphic003.jpg', title: '電子報', tool: 'Photoshop', text: '設定宣傳旅遊行程。' },
+        { imgUrl: './images/graphic004.jpg', title: '印刷傳單', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
+        { imgUrl: './images/graphic005.jpg', title: '電子宣傳', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
+        { imgUrl: './images/graphic006.jpg', title: '電子宣傳', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
+        { imgUrl: './images/graphic007.jpg', title: '電子宣傳', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
+        { imgUrl: './images/graphic008.jpg', title: '電子宣傳', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' },
+        { imgUrl: './images/graphic009.jpg', title: '電子宣傳', tool: 'Photoshop', text: '以2021年牛年為發想主軸，用扭轉乾坤帶出牛年好運。' }
       ],
       illustras: [
         { imgUrl: './images/illustration001.jpg', tool: 'illustrater' },
