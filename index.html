@@ -164,26 +164,16 @@
     <section id="section05">
       <h2>插圖</h2>
       <div class="container">
-        <div class="illustraGroup col-2" v-for="illustra in illustras">
-          <div class="card" >
-            <img :src="illustra.imgUrl" class="card-img-top">
+        <div class="illustraGroup" >
+          <div class="card" v-for="illustra in illustras">
+            <div class="card-img-top">
+              <img :src="illustra.imgUrl" class="card-img-top">
+            </div>
             <div class="card-body">
               <p class="card-text">{{ illustra.tool }}</p>
             </div>
           </div>
         </div>
-        
-
-        <!-- <div class="owl-carousel owl-theme">
-          <div class="card">
-            <a class="image-popup-no-margins" href="./images/illustration001.jpg">
-              <img src="./images/illustration001.jpg" classs="card-img-top">
-            </a>         
-            <div class="card-body">
-              <div class="card-title">魔戒</div>
-            </div>
-          </div>
-        </div> -->
 
 
       </div>

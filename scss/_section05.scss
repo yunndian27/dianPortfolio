@@ -8,15 +8,29 @@
   }
 
   .illustraGroup {
-    width: 200px;
-    height: 350px;
+    // width: calc( 100% / 5 - 20px );
+    // height: 350px;
     
-    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    
+    // float: left;
     margin-right: 1rem;
     margin-bottom: 1rem;
 
+    .card {
+      width: calc( 100% / 5 - 20px );
+      margin: 20px 10px;
+    }
     img {
       width: 100%;
+    }
+
+    .card-img-top {
+      object-fit: contain;
+      object-position: center;
+      height: 200px;
+      background-color: rgba($color: $color_secondary, $alpha: 0.2);
     }
     // margin: .5rem;
     
