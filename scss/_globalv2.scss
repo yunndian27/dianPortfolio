@@ -9,7 +9,7 @@ body {
   color: #333;
   font-weight: 400;
   font-family: 'Noto Sans TC', sans-serif;
-  
+
   .container {
     padding: 1.25rem 0;
   }
@@ -25,22 +25,7 @@ body {
   a {
     @include transition(all .25s ease-in-out);
   }
-}
 
-#section01,
-#section02,
-#section03,
-#section04,
-#section05,
-.aboutMeWrap {
-  position: relative;
-  // height: 100vh;
-  // background: rgba($color: $color_primary, $alpha: 0.5);
-  // z-index: 1000;
-}
-
-#home {
-  height: 100vh;
 }
 
 main {

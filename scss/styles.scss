@@ -2,10 +2,10 @@
 @import './vendor/rfs';
 
 // 變數
-@import './variables';
+@import './vendor/variables';
 
 // 函式
-@import './functions';
+@import './mixins/functions';
 
 // 混合
 @import './mixins/rwd';
@@ -15,14 +15,15 @@
 @import './global';
 
 // 區塊結構
-@import './navbar';
-@import  './home';
-@import './section01';
-@import './section02';
-@import './section03';
-@import './section04';
-@import './section05';
-@import './aboutMe';
+@import './pages/navbar';
+@import './pages/home';
+@import './pages/section/section01';
+@import './pages/section/section02';
+@import './pages/section/section03';
+@import './pages/section/section04';
+@import './pages/section/section05';
+@import './pages/aboutMe';
+
 
 // 功能
 

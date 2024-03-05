@@ -1,0 +1,182 @@
+{
+  // "workbench.colorTheme": "Default Dark+",
+  // "workbench.colorCustomizations": {
+  //   "titleBar.activeBackground": "#483D8B",
+  //   "titleBar.activeForeground":"#ffffff",
+  // },
+  // "window.titleBarStyle": "custom"
+  "files.autoSave": "onFocusChange",
+  // "editor.fontFamily": "Hasklig, 'Source Code Pro'",
+  "editor.fontFamily": "Consolas",
+  // 字體大小
+  "editor.fontSize": 14,
+  // 字體間距
+  "editor.letterSpacing": 1.15,
+  // 行高
+  "editor.lineHeight": 21,
+  "editor.fontLigatures": true,
+  "editor.rulers": [80, 120],
+  // "editor.wordWrap": "on",
+  // Tab 間隔
+  "editor.tabSize": 2,
+  // vue
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.syntaxProfiles": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  //
+  "workbench.colorTheme": "Community Material Theme Darker",
+  // "backgroundCover.imagePath": "/Users/jane/Desktop/the-peanuts-9.jpg",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "terminal.integrated.tabs.enabled": true,
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": ["document"]
+  },
+  // "terminal.integrated.defaultProfile.osx": "bin/bash",
+  // "terminal.integrated.automationShell.osx": "bin/bash",
+  // "terminal.integrated.automationShell.windows": "PowerShell",
+  "liveshare.anonymousGuestApproval": "accept",
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true,
+  //   "source.organizeImports": false,
+  //   "source.fixAll": false
+  // },
+  "editor.detectIndentation": false,
+  "workbench.iconTheme": "vscode-great-icons",
+  "workbench.colorCustomizations": {
+    "[Material Theme Darker]": {
+      "activityBarBadge.background": "#AB47BC",
+      "activityBar.activeBorder": "#AB47BC",
+      "list.activeSelectionForeground": "#AB47BC",
+      "list.inactiveSelectionForeground": "#AB47BC",
+      "list.highlightForeground": "#AB47BC",
+      "scrollbarSlider.activeBackground": "#AB47BC50",
+      "editorSuggestWidget.highlightForeground": "#AB47BC",
+      "textLink.foreground": "#AB47BC",
+      "progressBar.background": "#AB47BC",
+      "pickerGroup.foreground": "#AB47BC",
+      "tab.activeBorder": "#AB47BC",
+      "notificationLink.foreground": "#AB47BC",
+      "editorWidget.resizeBorder": "#AB47BC",
+      "editorWidget.border": "#AB47BC",
+      "settings.modifiedItemIndicator": "#AB47BC",
+      "settings.headerForeground": "#AB47BC",
+      "panelTitle.activeBorder": "#AB47BC",
+      "breadcrumb.activeSelectionForeground": "#AB47BC",
+      "menu.selectionForeground": "#AB47BC",
+      "menubar.selectionForeground": "#AB47BC",
+      "editor.findMatchBorder": "#AB47BC",
+      "selection.background": "#AB47BC40",
+      "statusBarItem.remoteBackground": "#AB47BC"
+    }
+  },
+  "materialTheme.accent": "Purple",
+  "editor.tokenColorCustomizations": {
+    "comments": "#aaa"
+  },
+  // Live Sass Compiler ------------------------------------------------------------------------------
+  "liveSassCompile.settings.formats": [
+    // This is Default.
+    // {
+    //   "format": "expanded",
+    //   "extensionName": ".css",
+    //   "savePath": null
+    // },
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "~/../dist"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.generateMap": false,
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  // "terminal.integrated.fontFamily": "monospace",
+  // vetur
+  "vetur.format.styleInitialIndent": true,
+  "vetur.format.scriptInitialIndent": true,
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "prettier.semi": false,
+  "prettier.eslintIntegration": true,
+  "html.format.wrapAttributes": "force-expand-multiline",
+  // eslint 自動修正
+  // "eslint.codeActionsOnSave": true,
+  // eslint 排版 html 與 vue 檔
+  // "eslint.validate": [
+  //   "javascript",
+  //   "javascriptreact",
+  //   {
+  //     "language": "html",
+  //     "autoFix": true
+  //   },
+  //   {
+  //     "language": "vue",
+  //     "autoFix": true
+  //   }
+  // ],
+  "eslint.options": {
+    "plugins": ["html"]
+  },
+  "editor.formatOnSave": false,
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "terminal.integrated.env.windows": {},
+  "git.enableSmartCommit": true,
+  "terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 16,
+  // vetur
+  "vetur.validation.template": false,
+  "vetur.validation.script": false,
+  "vetur.validation.style": false,
+  "settingsSync.ignoredExtensions": [
+    
+  ],
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "json.schemas": [],
+  "prettier.singleQuote": true,
+  // 讓 ESLint 幫忙檢查及排版
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": "explicit"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "bracketPairColorizer.depreciation-notice": false,
+  "liveSassCompile.settings.includeItems": [
+    
+  
+  ],
+  "security.workspace.trust.untrustedFiles": "open",
+  "liveshare.audio.startCallOnShare": true,
+  "terminal.integrated.automationProfile.linux": {
+  
+  }
+}
+// {
+//   "html-css-class-completion.JavaScriptLanguages": [
+
+//     "javascript",
+//     "javascriptreact",
+//     "typescriptreact"
+//   ]
+// }

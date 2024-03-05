@@ -41,7 +41,7 @@
 
         &::before {
           content: '';
-          width: 416px;
+          width: 100%;
           height: 220px;
           position: absolute;
           background: $color_func;
@@ -108,7 +108,6 @@
 
           &::before {
             content: '';
-            width: 358px;
             height: 160px;
             position: absolute;
             background: $color_func;
@@ -176,7 +175,6 @@
 
           &::before {
             content: '';
-            width: 416px;
             height: 220px;
             position: absolute;
             background: $color_func;

@@ -1,0 +1,210 @@
+/* home --------------------------------------------------- */
+#home {
+  margin-top: 63px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  &::before {
+    content: '';
+    width: 280px;
+    height: 280px;
+    background: $color_primary;
+    position: absolute;
+    right: 0;
+    top: 55%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  .info {
+    width: auto;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    h1 {
+      line-height: 3rem;
+      span {
+        font-size: 1.6rem;
+      }
+    }
+
+    .sayHi {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: rgba($color: $color_grey, $alpha: 0.7);
+    }
+
+    .jobTitle {
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 2;
+      // color: $color_func;
+    }
+
+    .quote {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba($color: $color_grey, $alpha: 0.7);
+    }
+  }
+
+  .dianImg {
+    width: 280px;
+    height: 280px;
+    background: url('../images/dianImg.jpg') no-repeat center/100%;
+    border-radius: 50%;
+  }
+
+  .material-icons {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    color: $color_grey_light;
+    position: relative;
+    margin-top: 5rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2.5px solid rgba($color: $color_grey_light, $alpha: 0.6);
+    }
+  }
+
+  .jobName {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgba($color: $color_grey, $alpha: 0.05);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+
+  @include md {
+
+    &::before {
+      width: 320px;
+      height: 320px;
+      top: 52%;
+    }
+
+    .info {
+      padding-bottom: 1rem;
+    }
+
+    .dianImg {
+      width: 320px;
+      height: 320px;
+    }
+
+    .jobName {
+      font-size: 6rem;
+    }
+
+  }
+
+  @include lg{
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    &::before {
+      content: '';
+      width: 30%;
+      height: 100vh;
+      background: rgba($color: $color_primary, $alpha: 0.7);
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 0;
+      z-index: -1;
+    }
+
+    .info {
+      width: 35%;
+      margin-bottom: 0;
+
+      h1 {
+        font-size: 3rem;
+        span {
+          font-size: 2.4rem;
+        }
+      }
+      .jobTitle {
+        font-size: 1.8rem;
+        line-height: 4rem;
+        
+      }
+      .sayHi {
+        font-size: 1.8rem;
+        
+      }
+      .quote {
+        font-size: 1.2rem;
+        
+      }
+    }
+    .dianImg {
+      width: 370px;
+      height: 370px;
+    }
+
+
+
+    .jobName {
+      font-size: 8rem;
+      color: rgba($color: $color_grey, $alpha: 0.1);
+    }
+
+  }
+
+  @include xl {
+    // flex-direction: row;
+    // flex-wrap: wrap;
+
+    // &::before {
+    //   content: '';
+    //   width: 30%;
+    //   height: 100vh;
+    //   background: rgba($color: $color_primary, $alpha: 0.7);
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0px;
+    // }
+
+    .info {
+      h1 {
+        font-size: 5rem;
+        line-height: 6rem;
+      }
+      .quote {
+        font-size: 1.6rem;
+      }
+    }
+
+    .dianImg {
+      width: 400px;
+      height: 400px;
+    }
+
+    .jobName {
+      font-size: 10rem;
+    }
+
+  }
+}
