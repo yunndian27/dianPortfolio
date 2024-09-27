@@ -31,19 +31,22 @@
         <div class="collapse navbar-collapse sidebar" id="dian_navbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link main-link" href="#section01" title="關於我">關於我</a>
+              <a class="nav-link main-link active" @click="navActive" href="#" title="Home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link main-link" href="#section02" title="網頁設計">網頁設計</a>
+              <a class="nav-link main-link" @click="navActive" href="#section01" title="關於我">關於我</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link main-link" href="#section03" title="UI/UX">UI/UX</a>
+              <a class="nav-link main-link" @click="navActive" href="#section02" title="網頁設計">網頁設計</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link main-link" href="#section04" title="平面設計">平面設計</a>
+              <a class="nav-link main-link" @click="navActive" href="#section03" title="UI/UX">UI/UX</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link main-link" href="#section05" title="插圖">插圖</a>
+              <a class="nav-link main-link" @click="navActive" href="#section04" title="平面設計">平面設計</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-link" @click="navActive" href="#section05" title="插圖">插圖</a>
             </li>
           </ul>
         </div>

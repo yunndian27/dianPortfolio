@@ -59,6 +59,14 @@ new Vue({
   },
   // 元件使用到的 function
   methods: {
+    navActive: function(e){    
+      $("ul.navbar-nav > li > a").click(
+        function (e) {
+          $("ul.navbar-nav > li > a").removeClass("active");
+          $(this).addClass("active");
+        }
+      );
+    }
   },
   // 計算屬性
   computed:{
