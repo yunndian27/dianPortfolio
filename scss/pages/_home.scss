@@ -3,10 +3,15 @@
   margin-top: 63px;
   position: relative;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  // align-items: center;
+  // align-content: center;
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   &::before {
     content: '';
@@ -19,6 +24,12 @@
     transform: translateY(-50%);
     border-radius: 50%;
     z-index: -1;
+  }
+
+  .dianInfoGroup {
+    // width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .info {
@@ -80,6 +91,28 @@
       border: 2.5px solid rgba($color: $color_grey_light, $alpha: 0.6);
     }
   }
+  .dropdown-icons {
+    width: 60px;
+    height: 60px;
+    border: 1px solid $color_grey_light;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%) rotate(45deg);
+      width: 20px;
+      height: 20px;
+      border-right: 2px solid $color_grey_light;
+      border-bottom: 2px solid $color_grey_light;
+    }
+    span {
+      color: transparent;
+    }
+  }
 
   .jobName {
     width: 100%;
@@ -88,10 +121,11 @@
     font-weight: 700;
     line-height: 1.2;
     color: rgba($color: $color_grey, $alpha: 0.05);
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
+    margin-bottom: 40px;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    // z-index: -1;
   }
 
 
@@ -119,8 +153,8 @@
   }
 
   @include lg{
-    flex-wrap: wrap;
-    flex-direction: row;
+    // flex-wrap: wrap;
+    flex-direction: column;
 
     &::before {
       content: '';
@@ -136,7 +170,7 @@
     }
 
     .info {
-      width: 35%;
+      // width: calc( 100% - 370px );
       margin-bottom: 0;
 
       h1 {
@@ -188,6 +222,8 @@
     // }
 
     .info {
+      margin-right: 60px;
+      
       h1 {
         font-size: 5rem;
         line-height: 6rem;
